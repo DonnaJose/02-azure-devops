@@ -15,7 +15,7 @@ stages:
     - job: FirstJob
       steps:
         - bash : echo Build FirstJob
-        - bash : $(FirstPipelineVariable)
+        - bash : echo $(FirstPipelineVariable)
     - job: SecondJob
       dependsOn: FirstJob
       steps:
